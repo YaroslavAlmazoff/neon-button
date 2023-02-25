@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(20, 20, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #40A4FF;
+    box-shadow: 0 0 5px #40A4FF;
+    color: rgb(4, 0, 46);
+    border: 3px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition-property: transform;
+    transition-duration: 0.6s;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 7px #40A4FF;
+    } 50% {
+        box-shadow: 0 0 16px #40A4FF;
+    } 100% {
+        box-shadow: 0 0 8px #40A4FF;
+    }
+}
+.button:hover {
+    transform: scale(110%);
+}
